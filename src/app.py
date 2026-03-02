@@ -8,7 +8,7 @@ def home():
 
 @app.route("/status")
 def status():
-    return {"status": "API onlines}
+    return {"status": "API online"}
 
 if __name__ == "__main__":
     app.run(debug=True)
