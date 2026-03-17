@@ -8,7 +8,11 @@ def home():
 
 @app.route("/status")
 def status():
-    return {"status": "Sistema desenvolvido em Flask para estudo de CI/CD"}
+    return {"Sistema desenvolvido em Flask para estudo de CI/CD"}
+
+@app.route("/livros")
+def livros():
+    return {"Lista de livros cadastrados"}
 
 if __name__ == "__main__":
     app.run(debug=True)
