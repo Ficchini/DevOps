@@ -21,4 +21,4 @@ jobs:
       - run: pytest
 
       - name: Simular Deploy
-      run: echo "Deploy realizado com sucesso"
+      - run: echo "Deploy realizado com sucesso"
