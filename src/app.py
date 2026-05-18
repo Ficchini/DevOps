@@ -3,7 +3,7 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route("/")
-def home():
+def hoe():
     return {"mensagem": "Sistema de Gestão de Biblioteca"}
 
 @app.route("/status")
