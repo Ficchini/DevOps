@@ -15,7 +15,9 @@ def test_status():
     assert client is not None
     response = client.get("/status")
     assert response.status_code == 200
-    assert response.json == {"Sistema desenvolvido em Flask para estudo de CI/CD"}
+    assert response.json == {
+        "mensagem": "Sistema desenvolvido em Flask para estudo de CI/CD"
+    }
     
 def test_livros():
     client = app.test_client()
@@ -40,4 +42,4 @@ def test_cadastro_livro():
     assert client is not None
     response = client.get("/cadastro-livro")
     assert response.status_code == 200
-    assert response.json == {"Formulário de cadastro de livros"}
+    assert response.json == {"mensagem": "Formulário de cadastro de livros"}
